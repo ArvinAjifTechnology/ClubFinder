@@ -5,7 +5,7 @@ import DataSource from "../data/data-source.js";
 const main = () => {
   const searchElement = document.querySelector("search-bar");
   const clubListElement = document.querySelector("club-list");
-
+  console.log(searchElement);
   const onButtonSearchClicked = async () => {
     try {
       const result = await DataSource.searchClub(searchElement.value);
